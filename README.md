@@ -7,6 +7,8 @@
 
 > An independent, open RCSA instrument: a standard self-assessment method for the frontier-model evaluation and research-compute process, shipped **populated with a worked example** drawn from a real, publicly documented incident. Ratings are the author's own and are indicative. **Not affiliated with, authorised by, or endorsed by OpenAI or Hugging Face.**
 
+**▶ [Open the interactive risk & control matrix](https://socragpt.github.io/agentic-ai-containment-rcsa/)** — a spreadsheet-style, in-browser view of the register (no download needed).
+
 ---
 
 ## What this is
@@ -25,6 +27,8 @@ This repository provides that instrument for the **Frontier AI Model Evaluation 
 | `openai-hf-2026-report.docx` | The same report in editable Word format. |
 | `LICENSE` | CC BY 4.0. |
 | `CITATION.cff` | Citation metadata. |
+| `index.html` | Interactive risk & control matrix (spreadsheet-style); rendered live via [GitHub Pages](https://socragpt.github.io/agentic-ai-containment-rcsa/). |
+| `AGENTS.md` | Operating guide for an AI agent (or analyst) to run this RCSA method on **any** process — procedure, exact rules, data schema, and a prompt template. |
 
 ## How to use the template
 
@@ -35,6 +39,8 @@ This repository provides that instrument for the **Frontier AI Model Evaluation 
 5. Review the **Profile Summary** — the residual heat map and appetite-breach counts update from the register.
 
 > To start a fresh assessment, copy the workbook and clear the data rows (below the headers) in the Register, Control Library, Action Plan and KRI tabs, keeping the headers, dropdowns and formulas.
+
+> **Using an AI agent?** [`AGENTS.md`](AGENTS.md) turns this method into a step-by-step playbook — procedure, exact rules, a data schema, and a prompt template — so an agent can run an RCSA on any process.
 
 ---
 
