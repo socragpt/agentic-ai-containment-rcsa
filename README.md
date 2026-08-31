@@ -20,8 +20,9 @@ This repository provides that instrument for the **Frontier AI Model Evaluation 
 | File | Description |
 |---|---|
 | `README.md` | This document — methodology, governance, and the completed worked example. |
-| `RCSA_Agentic_AI_Containment_Instrument.xlsx` | **The fillable instrument.** Tabs: Cover & sign-off, Methodology & appetite, Risk Register, Control Library, Action Plan, KRI/KCI register, Profile Summary (auto-calculating heat map). Ships populated with the worked example; copy and clear the data rows to start your own. |
-| `RCSA_Agentic_AI_Containment_CaseStudy.docx` / `.pdf` | Formatted narrative report of the worked example. |
+| `openai-hf-2026-instrument.xlsx` | **The fillable instrument.** Tabs: Cover & sign-off, Methodology & appetite, Risk Register, Control Library, Action Plan, KRI/KCI register, Profile Summary (auto-calculating heat map). Ships populated with the worked example; copy and clear the data rows to start your own. |
+| `openai-hf-2026-report.pdf` | Formatted narrative report of the worked example (view / print). |
+| `openai-hf-2026-report.docx` | The same report in editable Word format. |
 | `LICENSE` | CC BY-SA 4.0. |
 | `CITATION.cff` | Citation metadata. |
 
