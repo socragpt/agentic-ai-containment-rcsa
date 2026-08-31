@@ -3,7 +3,7 @@
 ## A reusable RCSA instrument for the *Frontier AI Model Evaluation* process, with a worked example
 ### Worked example: The OpenAI–Hugging Face Incident (April–July 2026)
 
-**Version 1.0** · 31 August 2026 · **Author:** socragpt · **Licence:** [CC BY-SA 4.0](#licence)
+**Version 1.0** · 31 August 2026 · **Author:** socragpt · **Licence:** [CC BY 4.0](#licence)
 
 > An independent, open RCSA instrument: a standard self-assessment method for the frontier-model evaluation and research-compute process, shipped **populated with a worked example** drawn from a real, publicly documented incident. Ratings are the author's own and are indicative. **Not affiliated with, authorised by, or endorsed by OpenAI or Hugging Face.**
 
@@ -23,7 +23,7 @@ This repository provides that instrument for the **Frontier AI Model Evaluation 
 | `openai-hf-2026-instrument.xlsx` | **The fillable instrument.** Tabs: Cover & sign-off, Methodology & appetite, Risk Register, Control Library, Action Plan, KRI/KCI register, Profile Summary (auto-calculating heat map). Ships populated with the worked example; copy and clear the data rows to start your own. |
 | `openai-hf-2026-report.pdf` | Formatted narrative report of the worked example (view / print). |
 | `openai-hf-2026-report.docx` | The same report in editable Word format. |
-| `LICENSE` | CC BY-SA 4.0. |
+| `LICENSE` | CC BY 4.0. |
 | `CITATION.cff` | Citation metadata. |
 
 ## How to use the template
@@ -234,4 +234,4 @@ The developer has publicly committed to remediation across the same themes: virt
 
 ## Licence
 
-© 2026 socragpt. Licensed under a [Creative Commons Attribution-ShareAlike 4.0 International Licence (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). You may share and adapt the material for any purpose, provided you give appropriate credit and license derivatives under the same terms.
+© 2026 socragpt. Licensed under a [Creative Commons Attribution 4.0 International Licence (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may share and adapt the material for any purpose, provided you give appropriate credit.
