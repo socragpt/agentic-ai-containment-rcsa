@@ -3,8 +3,7 @@ title: "Agentic-AI Containment RCSA: A Reusable Instrument and Worked Example"
 message: "If you use this material, please cite it as below."
 type: dataset
 authors:
-  - family-names: Pearson
-    given-names: Tyler
+  - name: "socragpt"
 abstract: >-
   An independent, open Risk & Control Self-Assessment (RCSA) instrument for the
   frontier AI model-evaluation and research-compute process, shipped with a
