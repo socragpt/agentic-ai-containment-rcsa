@@ -1,19 +1,22 @@
 cff-version: 1.2.0
-title: "Agentic-AI Containment RCSA: A Reusable Instrument and Worked Example"
+title: "Agentic-AI Containment RCSA: A Reusable Instrument with Two Worked Examples"
 message: "If you use this material, please cite it as below."
 type: dataset
 authors:
   - name: "socragpt"
 abstract: >-
   An independent, open Risk & Control Self-Assessment (RCSA) instrument for the
-  frontier AI model-evaluation and research-compute process, shipped with a
-  worked example based on the publicly documented 2026 OpenAI-Hugging Face
-  agent-containment incident. Includes a fillable Excel instrument (risk
-  register, control library, action plan, KRI/KCI register, risk-appetite model
-  and profile summary), a methodology, and a narrative report. Compiled solely
-  from public sources; not affiliated with or endorsed by OpenAI or Hugging Face.
-version: "1.0"
-date-released: "2026-08-31"
+  frontier-AI model-evaluation, training-environment-integrity and agent-containment
+  process. Shipped as a blank, fillable instrument (risk register, control library,
+  action plan, KRI/KCI register, risk-appetite model and auto-calculating profile
+  summary) with a methodology and an AI-agent playbook, and demonstrated by two
+  worked examples: the 2026 OpenAI-Hugging Face agent-containment incident, and
+  Anthropic's July-September 2026 post-incident response (evaluation and training
+  safety). Each example ships a populated workbook, a narrative report and an
+  interactive matrix. Compiled solely from public sources; not affiliated with or
+  endorsed by OpenAI, Hugging Face or Anthropic.
+version: "1.1"
+date-released: "2026-09-01"
 license: CC-BY-4.0
 repository-code: "https://github.com/socragpt/agentic-ai-containment-rcsa"
 url: "https://github.com/socragpt/agentic-ai-containment-rcsa"
@@ -25,4 +28,5 @@ keywords:
   - AI-governance
   - agentic-AI
   - model-evaluation
+  - reward-hacking
   - control-assessment

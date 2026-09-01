@@ -1,6 +1,6 @@
 # AGENTS.md — Conduct an RCSA for any process
 
-This repository is a reusable **Risk & Control Self-Assessment (RCSA)** instrument. This file is the operating guide for an **AI agent** (or an analyst working with one) to produce a rigorous RCSA for **any process**, following the method in [`README.md`](README.md) and populating the workbook `openai-hf-2026-instrument.xlsx`.
+This repository is a reusable **Risk & Control Self-Assessment (RCSA)** instrument. This file is the operating guide for an **AI agent** (or an analyst working with one) to produce a rigorous RCSA for **any process**, following the method in [`README.md`](README.md) and populating a copy of the blank instrument [`template/rcsa-instrument-template.xlsx`](template/rcsa-instrument-template.xlsx).
 
 > An RCSA is a **first-line self-assessment**: the team that owns the process assesses its own risks and controls, rates residual risk against a stated appetite, and owns the resulting actions. Preserve that framing — the agent **drafts and challenges; the process owner owns the ratings and the appetite.**
 
@@ -36,7 +36,7 @@ Do **not** fabricate evidence. Where you assume, say so and lower your confidenc
 3. **Identify risks.** For each activity, state risks as **cause → event → consequence**. Capture the *material few* (usually 8–15), not an exhaustive list.
 4. **Rate inherent.** Assign L and I with a brief rationale; compute score and band.
 5. **Map controls.** For each risk, list the **key controls** that should mitigate it; assess **design** and **operating** effectiveness against evidence; derive overall.
-6. **Rate residual.** Re-rate L and I given controls **as operated**. If controls are weak, residual ≈ inherent — say so plainly rather than discounting.
+6. **Rate residual.** Re-rate L and I given controls **as operated**. If controls are weak, residual ≈ inherent — say so plainly rather than discounting. For an event-driven refresh after remediation, you may rate inherent at the time of the incident and residual on the controls **as remediated** — state the two snapshots explicitly (worked example B does this).
 7. **Appetite.** Set the ceiling per category (propose if none exists) and compute appetite status.
 8. **Prioritise.** Derive action priority from residual vs appetite.
 9. **Actions.** For **every breach**, define an action: description, owner (role), target window, status, and **target residual** once done.
@@ -79,9 +79,11 @@ priority(residual, breach) = "Monitor"        if not breach
 
 ## Using the repo artifacts
 
-- **`openai-hf-2026-instrument.xlsx`** — the working instrument. To start fresh: copy it, clear the data rows in the Register / Control Library / Action Plan / KRI tabs (keep the header rows, dropdowns and formulas), and repopulate the Cover. The Profile Summary heat map and appetite-breach counts recompute automatically. Build/edit with `openpyxl` and **keep formulas — never hard-code computed results.**
-- **`README.md`** — the full methodology plus a completed worked example (the OpenAI–Hugging Face incident) to pattern-match against.
-- **`index.html`** — a read-only, spreadsheet-style view of a completed register; a presentation reference, not an input.
+- **`template/rcsa-instrument-template.xlsx`** — the blank working instrument. To start: copy it, populate the Cover and the data rows in the Register / Control Library / Action Plan / KRI tabs (the headers, dropdowns and formulas are already in place). The Profile Summary heat map and appetite-breach counts recompute automatically. Build/edit with `openpyxl` and **keep formulas — never hard-code computed results.**
+- **`README.md`** — the full methodology plus an index to two completed worked examples to pattern-match against.
+- **`examples/openai-hugging-face-2026/`** and **`examples/anthropic-eval-training-2026/`** — each worked example ships a populated `instrument.xlsx`, a narrative `report.pdf`/`.docx`, an interactive `matrix.html`, and a `README.md` write-up. Example B demonstrates the two-snapshot (inherent-at-incident, residual-post-remediation) approach.
+- **`tools/`** — the generators (`build_xlsx.py`, `build_report.js`, `build_matrix.js`) and per-example data modules. To add a third example, author a data module and run the generators; the workbook, report and matrix follow.
+- **`index.html`** — the landing page and interactive matrices; a presentation reference, not an input.
 
 ## Quality bar (self-check before finishing)
 
@@ -106,8 +108,8 @@ priority(residual, breach) = "Monitor"        if not breach
 >
 > Produce: (1) a **risk register** — the material risks as cause→event→consequence, with inherent → controls (design/operating) → residual, appetite status, priority and owner; (2) a **control library**; (3) an **action plan** for every breach; (4) **KRIs/KCIs**; and (5) a **governance cover** with three-lines sign-off.
 >
-> Rate residual on controls **as they actually operate**, label every assumption, propose appetite ceilings for my sign-off, and flag where you lack evidence. Then populate a copy of `openai-hf-2026-instrument.xlsx`.
+> Rate residual on controls **as they actually operate**, label every assumption, propose appetite ceilings for my sign-off, and flag where you lack evidence. Then populate a copy of `template/rcsa-instrument-template.xlsx`.
 
 ---
 
-*Part of the [Agentic-AI Containment RCSA](README.md). © 2026 socragpt · Licensed [CC BY 4.0](LICENSE). Illustrative — not affiliated with, authorised by, or endorsed by OpenAI or Hugging Face.*
+*Part of the [Agentic-AI Containment RCSA](README.md). © 2026 socragpt · Licensed [CC BY 4.0](LICENSE). Illustrative — not affiliated with, authorised by, or endorsed by any organisation named in the worked examples.*
