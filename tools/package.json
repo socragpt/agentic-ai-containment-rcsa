@@ -1,0 +1,13 @@
+{
+  "name": "rcsa-instrument-tools",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Generators for the RCSA instrument template and worked examples.",
+  "license": "CC-BY-4.0",
+  "scripts": {
+    "build": "node build_report.js openai_hugging_face_2026 && node build_report.js anthropic_eval_training_2026"
+  },
+  "dependencies": {
+    "docx": "^9.0.0"
+  }
+}
